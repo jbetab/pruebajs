@@ -1,0 +1,41 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "usuario": "admin",
+      "contraseña": "admin123",
+      "rol": "administrador"
+    },
+    {
+      "id": "ace7",
+      "usuario": "jeronimo",
+      "contraseña": "123456",
+      "rol": "visitante"
+    },
+    {
+      "id": "de2f",
+      "usuario": "jero",
+      "contraseña": "12345",
+      "rol": "visitante"
+    }
+  ],
+  "eventos": [
+    {
+      "id": "8665",
+      "titulo": "grados",
+      "capacidad": 100,
+      "asistentes": [
+        "jeronimo",
+        "jero"
+      ]
+    },
+    {
+      "id": "df63",
+      "titulo": "grados2",
+      "capacidad": 1,
+      "asistentes": [
+        "jero"
+      ]
+    }
+  ]
+}

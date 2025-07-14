@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eventos</title>
+</head>
+<body>
+  <section id="vistaLogin">
+    <h2>Iniciar sesión</h2>
+    <form id="formLogin">
+      <input type="text" name="usuario" placeholder="Usuario" required />
+      <input type="password" name="contraseña" placeholder="Contraseña" required />
+      <button type="submit">Ingresar</button>
+    </form>
+    <p>¿No tienes cuenta? <a href="#" id="irRegistro">Regístrate</a></p>
+  </section>
+
+  <section id="vistaRegistro" style="display: none;">
+    <h2>Registro</h2>
+    <form id="formRegistro">
+      <input type="text" name="usuario" placeholder="Usuario" required />
+      <input type="password" name="contraseña" placeholder="Contraseña" required />
+      <select name="rol">
+        <option value="visitante">Visitante</option>
+        <option value="administrador">Administrador</option>
+      </select>
+      <button type="submit">Registrarse</button>
+    </form>
+    <p>¿Ya tienes cuenta? <a href="#" id="irLogin">Inicia sesión</a></p>
+  </section>
+
+  <section id="vistaDashboard" style="display: none;">
+    <h2 id="mensajeBienvenida"></h2>
+    <button id="btnCerrarSesion">Cerrar sesión</button>
+    <input type="text" id="buscadorEvento" placeholder="Buscar evento...">
+    <div id="panelAdmin" style="display: none;">
+      <h3>Crear evento</h3>
+      <form id="formEvento">
+        <input type="text" name="titulo" placeholder="Título" required />
+        <input type="number" name="capacidad" placeholder="Capacidad" required />
+        <button type="submit">Crear</button>
+      </form>
+    </div>
+    <ul id="listaEventos"></ul>
+  </section>
+
+  <script src="index.js"></script>
+</body> 
+</html>
